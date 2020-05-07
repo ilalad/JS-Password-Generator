@@ -1,5 +1,5 @@
 //var
-var passwordLength = prompt("Please select a password lenght? (between 8-128 characters")
+var passwordLength = prompt("Please select a password length? (between 8-128 characters")
 var upperCase = prompt("Do you want to include upper case letters");
 var numbers = confirm("Do you want to include numbers");
 var specialChar = prompt("Do want to inlude special characters");
