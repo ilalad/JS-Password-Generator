@@ -1,10 +1,3 @@
-//var
-var passwordLength = prompt("Please select a password length? (between 8-128 characters")
-var upperCase = prompt("Do you want to include upper case letters");
-var numbers = confirm("Do you want to include numbers");
-var specialChar = prompt("Do want to inlude special characters");
-
-
 var charSet = "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm"
 var num = 1234567890;
 var charSpecial = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
@@ -12,11 +5,8 @@ var charSpecial = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
   for (var i = 0; i <= 8; i++) {
     var chars = Math.floor(Math.random() * 10) + 1;
 }
-//var passwordLength = prompt("Please select a passweod length? (Between 8-128 characters)");
-//var numbers = confirm("Do you want to inlucde numbers?");
 // Assignment Code
-var userInput = prompt(
-  "Please select a password length? (Between 8-128 characters)"
+var userInput = prompt("Please select a password length? (Between 8-128 characters)"
 );
 for (var i = 0; i < userInput; i++) {
   var num = Math.floor(Math.random() * 10) + 1;
@@ -25,15 +15,20 @@ for (var i = 0; i < userInput; i++) {
 var upperCase = confirm("Do you want to include upper case letters?");
 if (upperCase === false) {
   charSet = charSet.toLowerCase();
-  var computerGuessUpper = charSet[Math.floor(Math.random() * charSet.length)];
-  console.log(computerGuessUpper);
+  var computerUpper = charSet[Math.floor(Math.random() * charSet.length)];
+  console.log(computerUpper);
 } else {
-  var computerGuessLower = charSet[Math.floor(Math.random() * charSet.length)];
-  console.log(computerGuessLower);
+  var computerLower = charSet[Math.floor(Math.random() * charSet.length)];
+  console.log(computerLower);
 }
 var specialCharacters = confirm("Do want to include special characters?");
 if (specialCharacters === true) {
   var userSpSel = charSpecial[Math.floor(Math.random() * charSet.length)];
+  console.log(userSpSel);
+}
+var numbers = confirm("Do you want to inlucde numbers?");
+if (numbers === true) {
+  var userSpSel = numbers[Math.floor(Math.random() * charSet.length)];
   console.log(userSpSel);
 }
 
