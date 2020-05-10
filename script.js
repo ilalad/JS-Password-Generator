@@ -21,7 +21,7 @@ if (upperCase === false) {
   var computerLower = charSet[Math.floor(Math.random() * charSet.length)];
   console.log(computerLower);
 }
-var specialCharacters = confirm("Do want to include special characters?");
+var specialCharacters = confirm("Do you want to include special characters?");
 if (specialCharacters === true) {
   var userSpSel = charSpecial[Math.floor(Math.random() * charSet.length)];
   console.log(userSpSel);
